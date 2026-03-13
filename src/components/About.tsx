@@ -1,108 +1,70 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { GraduationCap, Award, Users, Heart, ArrowRight } from "lucide-react";
+import { GraduationCap } from "lucide-react";
 import professorSergio from "@/assets/professor-sergio.jpg";
+
+const education = [
+  { period: "2026-2027", title: "Pós-graduando em Prescrição em Treinamento para Grupos Especiais e Doenças Crônicas" },
+  { period: "2025-2026", title: "Pós-graduado em Ergonomia - Do Técnico ao Comercial" },
+  { period: "2010-2012", title: "Pós-graduado em Método Pilates" },
+  { period: "2006-2011", title: "Administração - Gestão de Negócios em Comércio Exterior" },
+  { period: "1986-1990", title: "Licenciatura em Educação Física" },
+];
 
 const About = () => {
   return (
-    <section id="sobre" className="py-20 bg-muted/30">
+    <section id="responsavel" className="py-24 bg-muted/30">
       <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <span className="text-sm font-semibold uppercase tracking-widest text-secondary">Responsável Técnico</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-3 mb-4 font-display">
+            Conheça nosso Responsável Técnico
+          </h2>
+        </div>
+
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Conheça o Professor Sergio Cardozo
-            </h2>
-            <p className="text-xl text-muted-foreground">
-              Especialista em ergonomia e bem-estar no trabalho
-            </p>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <div className="space-y-4">
-                <h3 className="text-2xl font-semibold text-foreground">
-                  Experiência e Dedicação ao Bem-Estar
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  O Professor Sergio Cardozo é um profissional experiente na área de ergonomia 
-                  e saúde ocupacional, com especialização em pilates e amplo conhecimento em 
-                  biomecânica aplicada ao ambiente de trabalho.
-                </p>
-                <p className="text-muted-foreground leading-relaxed">
-                  Sua abordagem única combina conhecimento técnico em ergonomia com experiência 
-                  prática em movimento corporal, proporcionando soluções inovadoras para 
-                  prevenção de lesões e melhoria da qualidade de vida no trabalho.
-                </p>
+          <div className="grid lg:grid-cols-5 gap-10 items-start">
+            {/* Photo & Quote */}
+            <div className="lg:col-span-2 flex flex-col items-center text-center space-y-6">
+              <div className="relative">
+                <div className="absolute -inset-2 bg-gradient-purple-gold rounded-full opacity-30 blur-md" />
+                <img 
+                  src={professorSergio} 
+                  alt="Sérgio Cardozo - Responsável Técnico da SupremAdapta"
+                  className="w-48 h-48 rounded-full object-cover relative z-10 border-4 border-background shadow-medium"
+                />
               </div>
-
-              <div className="grid grid-cols-2 gap-4">
-                <div className="flex items-center space-x-3 p-4 bg-gradient-primary rounded-lg text-white">
-                  <GraduationCap className="w-6 h-6" />
-                  <div>
-                    <div className="font-semibold">Professor</div>
-                    <div className="text-sm opacity-90">de Pilates</div>
-                  </div>
-                </div>
-                
-                <div className="flex items-center space-x-3 p-4 bg-gradient-secondary rounded-lg text-white">
-                  <Award className="w-6 h-6" />
-                  <div>
-                    <div className="font-semibold">Especialista</div>
-                    <div className="text-sm opacity-90">em Ergonomia</div>
-                  </div>
-                </div>
+              <div>
+                <h3 className="text-2xl font-bold text-foreground font-display">Sérgio Cardozo</h3>
+                <p className="text-secondary font-medium mt-1">Responsável Técnico</p>
               </div>
+              <blockquote className="italic text-muted-foreground border-l-4 border-secondary pl-4 text-left text-sm leading-relaxed">
+                "Minha missão é promover a saúde e bem-estar dos trabalhadores através de soluções ergonômicas eficazes"
+              </blockquote>
             </div>
 
-            <Card className="bg-card border-border/50 shadow-soft">
-              <CardContent className="p-8 space-y-6">
-                <div className="text-center">
-                  <div className="w-20 h-20 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                    <img src={professorSergio} alt="Professor Sergio Cardozo"
-                    className="rounded-full" />
-                  </div>
-                  <h4 className="text-xl font-semibold text-foreground mb-2">
-                    Minha Missão
-                  </h4>
+            {/* Education Timeline */}
+            <Card className="lg:col-span-3 border-border/50 bg-card">
+              <CardContent className="p-6 md:p-8">
+                <h4 className="text-lg font-bold text-foreground mb-6 font-display flex items-center gap-2">
+                  <GraduationCap className="w-5 h-5 text-primary" />
+                  Formação Acadêmica
+                </h4>
+                <div className="space-y-5">
+                  {education.map((item, index) => (
+                    <div key={index} className="flex gap-4 group">
+                      <div className="flex flex-col items-center">
+                        <div className="w-3 h-3 rounded-full bg-gradient-purple-gold flex-shrink-0 mt-1.5 group-hover:scale-125 transition-transform" />
+                        {index < education.length - 1 && (
+                          <div className="w-px h-full bg-border mt-1" />
+                        )}
+                      </div>
+                      <div className="pb-4">
+                        <span className="text-xs font-semibold text-secondary uppercase tracking-wider">{item.period}</span>
+                        <p className="text-foreground font-medium mt-1 text-sm leading-relaxed">{item.title}</p>
+                      </div>
+                    </div>
+                  ))}
                 </div>
-
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <Heart className="w-5 h-5 text-secondary mt-1 flex-shrink-0" />
-                    <p className="text-muted-foreground text-sm">
-                      Promover a saúde e bem-estar dos trabalhadores através de soluções ergonômicas eficazes
-                    </p>
-                  </div>
-                  
-                  <div className="flex items-start space-x-3">
-                    <Heart className="w-5 h-5 text-secondary mt-1 flex-shrink-0" />
-                    <p className="text-muted-foreground text-sm">
-                      Reduzir significativamente os riscos de lesões ocupacionais
-                    </p>
-                  </div>
-                  
-                  <div className="flex items-start space-x-3">
-                    <Heart className="w-5 h-5 text-secondary mt-1 flex-shrink-0" />
-                    <p className="text-muted-foreground text-sm">
-                      Aumentar a produtividade através de ambientes de trabalho saudáveis
-                    </p>
-                  </div>
-                </div>
-
-                <Button 
-                  className="w-full bg-gradient-secondary hover:opacity-90 transition-opacity"
-                  asChild
-                >
-                  <a 
-                    href="https://wa.me/5511999999999?text=Olá, Professor Sergio! Gostaria de conversar sobre ergonomia."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center space-x-2"
-                  >
-                    <span>Falar com o Professor</span>
-                    <ArrowRight className="w-4 h-4" />
-                  </a>
-                </Button>
               </CardContent>
             </Card>
           </div>
