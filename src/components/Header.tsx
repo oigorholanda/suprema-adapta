@@ -35,7 +35,7 @@ const Header = () => {
         <div className="flex items-center gap-3">
           <Button 
             variant="default"
-            className="hidden sm:inline-flex bg-gradient-purple-gold hover:opacity-90 transition-opacity text-white"
+            className="hidden sm:inline-flex bg-gradient-purple-deep hover:opacity-90 transition-opacity text-white"
             asChild
           >
             <a 
