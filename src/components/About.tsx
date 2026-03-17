@@ -35,7 +35,7 @@ const About = () => {
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-foreground font-display">Sérgio Cardozo</h3>
-                <p className="text-secondary font-medium mt-1">Responsável Técnico - Supremadapta</p>
+                <p className="text-secondary font-medium mt-1">Responsável Técnico - SupremAdapta</p>
               </div>
               <blockquote className="italic text-muted-foreground border-l-4 border-secondary pl-4 text-left text-sm leading-relaxed">
                 "Minha missão é promover a saúde e bem-estar dos trabalhadores através de soluções ergonômicas eficazes"
