@@ -70,7 +70,7 @@ const RiskFactors = () => {
         </div>
 
         <div className="mt-16">
-          <div className="bg-gradient-purple-gold rounded-2xl p-8 md:p-12 text-white text-center">
+          <div className="bg-gradient-purple-deep rounded-2xl p-8 md:p-12 text-white text-center">
             <h3 className="text-2xl md:text-3xl font-bold mb-4 font-display">
               Não deixe esses riscos comprometer sua empresa!
             </h3>

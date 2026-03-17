@@ -33,7 +33,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 size="lg"
-                className="bg-gradient-purple-gold hover:opacity-90 transition-opacity shadow-medium text-white text-base px-8"
+                className="bg-gradient-purple-deep hover:opacity-90 transition-opacity shadow-medium text-white text-base px-8"
                 asChild
               >
                 <a 

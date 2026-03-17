@@ -63,7 +63,7 @@ const Header = () => {
             <a href="#servicos" onClick={() => setMobileOpen(false)} className="text-muted-foreground hover:text-primary py-2 font-medium">Serviços</a>
             <a href="#responsavel" onClick={() => setMobileOpen(false)} className="text-muted-foreground hover:text-primary py-2 font-medium">Responsável Técnico</a>
             <a href="#contato" onClick={() => setMobileOpen(false)} className="text-muted-foreground hover:text-primary py-2 font-medium">Contato</a>
-            <Button className="bg-gradient-purple-gold text-white w-full" asChild>
+            <Button className="bg-gradient-purple-deep text-white w-full" asChild>
               <a href="https://wa.me/5561995592185?text=Olá! Gostaria de saber mais sobre os serviços da SupremAdapta." target="_blank" rel="noopener noreferrer">
                 Fale Conosco
               </a>

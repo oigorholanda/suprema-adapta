@@ -75,6 +75,7 @@ export default {
         'gradient-secondary': 'var(--gradient-secondary)',
         'gradient-hero': 'var(--gradient-hero)',
         'gradient-purple-gold': 'var(--gradient-purple-gold)',
+        'gradient-purple-deep': 'var(--gradient-purple-deep)',
       },
       boxShadow: {
         'soft': 'var(--shadow-soft)',
