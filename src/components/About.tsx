@@ -3,7 +3,7 @@ import { GraduationCap } from "lucide-react";
 import professorSergio from "@/assets/professor-sergio.jpg";
 
 const education = [
-  { period: "2026-2027", title: "Pós-graduando em Prescrição em Treinamento para Grupos Especiais e Doenças Crônicas" },
+  { period: "2026-2027", title: "Pós-graduando em Prescrição e Treinamento para Grupos Especiais, Doenças Crônicas e Avaliações de Riscos Psicossociais" },
   { period: "2025-2026", title: "Pós-graduado em Ergonomia - Do Técnico ao Comercial" },
   { period: "2010-2012", title: "Pós-graduado em Método Pilates" },
   { period: "2006-2011", title: "Administração - Gestão de Negócios em Comércio Exterior" },
