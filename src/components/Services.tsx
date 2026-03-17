@@ -19,10 +19,10 @@ const services = [
     title: "Consultorias Empresariais",
     description: "Consultoria especializada para implementação de programas de ergonomia e adequação às normas regulamentadoras.",
     features: [
-      "Diagnóstico organizacional",
-      "Programa de ergonomia customizado",
+      "Avaliações de riscos psicossociais",
       "Adequação às NRs",
-      "Suporte técnico contínuo"
+      "Diagnóstico organizacional",
+      "Programa de ergonomia customizado"
     ],
   },
   {

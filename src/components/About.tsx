@@ -3,7 +3,7 @@ import { GraduationCap } from "lucide-react";
 import professorSergio from "@/assets/professor-sergio.jpg";
 
 const education = [
-  { period: "2026-2027", title: "Pós-graduando em Prescrição em Treinamento para Grupos Especiais e Doenças Crônicas" },
+  { period: "2026-2027", title: "Pós-graduando em Prescrição e Treinamento para Grupos Especiais, Doenças Crônicas e Avaliações de Riscos Psicossociais" },
   { period: "2025-2026", title: "Pós-graduado em Ergonomia - Do Técnico ao Comercial" },
   { period: "2010-2012", title: "Pós-graduado em Método Pilates" },
   { period: "2006-2011", title: "Administração - Gestão de Negócios em Comércio Exterior" },
@@ -35,7 +35,7 @@ const About = () => {
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-foreground font-display">Sérgio Cardozo</h3>
-                <p className="text-secondary font-medium mt-1">Responsável Técnico - Supremadapta</p>
+                <p className="text-secondary font-medium mt-1">Responsável Técnico - SupremAdapta</p>
               </div>
               <blockquote className="italic text-muted-foreground border-l-4 border-secondary pl-4 text-left text-sm leading-relaxed">
                 "Minha missão é promover a saúde e bem-estar dos trabalhadores através de soluções ergonômicas eficazes"

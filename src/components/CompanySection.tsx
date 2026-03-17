@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Target, Lightbulb, TrendingUp, Heart } from "lucide-react";
+import logoImage from "@/assets/suprema-adapta-logo.png";
 
 const CompanySection = () => {
   return (
@@ -7,11 +8,18 @@ const CompanySection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <span className="text-sm font-semibold uppercase tracking-widest text-secondary">Quem Somos</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-3 mb-6 font-display">
-            Conheça a <span className="text-primary">Supremadapta</span>
-          </h2>
+          <div className="flex flex-col items-center gap-4 mt-3 mb-6">
+            <img 
+              src={logoImage} 
+              alt="SupremAdapta - Soluções Ergonômicas" 
+              className="h-24 w-auto rounded-xl shadow-soft"
+            />
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground font-display">
+              Conheça a <span className="text-primary">SupremAdapta</span>
+            </h2>
+          </div>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            A Supremadapta é uma empresa especializada em soluções ergonômicas, comprometida com a 
+            A SupremAdapta é uma empresa especializada em soluções ergonômicas, comprometida com a 
             saúde e bem-estar dos trabalhadores. Atuamos com excelência na análise, prevenção e 
             adequação de ambientes de trabalho, oferecendo consultoria personalizada para empresas 
             de todos os portes.
