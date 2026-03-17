@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="container mx-auto px-4">
           <div className="text-center space-y-6">
             <div>
-              <h3 className="text-2xl font-bold mb-2 font-display bg-gradient-purple-gold bg-clip-text text-transparent">
+              <h3 className="text-2xl font-bold mb-2 font-display bg-gradient-purple-deep bg-clip-text text-transparent">
                 SupremAdapta
               </h3>
               <p className="text-sm text-muted-foreground">Soluções Ergonômicas</p>

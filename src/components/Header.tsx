@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import logoImage from "@/assets/suprema-adapta-logo.png";
+import logoImage from "@/assets/SA-logo.png";
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);

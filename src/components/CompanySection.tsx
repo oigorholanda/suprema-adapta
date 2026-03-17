@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Target, Lightbulb, TrendingUp, Heart } from "lucide-react";
-import logoImage from "@/assets/suprema-adapta-logo.png";
+import logoImage from "@/assets/SA-logo.png";
 
 const CompanySection = () => {
   return (
@@ -12,7 +12,7 @@ const CompanySection = () => {
             <img 
               src={logoImage} 
               alt="SupremAdapta - Soluções Ergonômicas" 
-              className="h-24 w-auto rounded-xl shadow-soft"
+              className="h-44 w-auto rounded-xl"
             />
             <h2 className="text-3xl md:text-4xl font-bold text-foreground font-display">
               Conheça a <span className="text-primary">SupremAdapta</span>
