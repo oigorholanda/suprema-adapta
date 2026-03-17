@@ -20,7 +20,7 @@ const Contact = () => {
         <div className="max-w-4xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-8">
             {/* CTA Principal */}
-            <Card className="bg-gradient-purple-gold text-white border-0 shadow-medium overflow-hidden relative">
+            <Card className="bg-gradient-purple-deep text-white border-0 shadow-medium overflow-hidden relative">
               <div className="absolute top-0 right-0 w-40 h-40 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2" />
               <CardContent className="p-8 text-center space-y-6 relative z-10">
                 <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto">
