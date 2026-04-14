@@ -19,10 +19,10 @@ const services = [
     title: "Consultorias Empresariais",
     description: "Consultoria especializada para implementação de programas de ergonomia e adequação às normas regulamentadoras.",
     features: [
-      "Avaliações de riscos psicossociais",
-      "Adequação às NRs",
-      "Diagnóstico organizacional",
-      "Programa de ergonomia customizado"
+      "Mapeamento de riscos psicossociais no trabalho",
+      "Avaliação psicossocial dos colaboradores",
+      "Diagnóstico de riscos ergonômicos organizacionais",
+      "Programas contínuos de acompanhamento para empresas"
     ],
   },
   {
